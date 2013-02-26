@@ -46,19 +46,15 @@ In short this is how afx2lg works:
 
 So to use, do the following:
 
-# Run: *axebackup*.  This will create .syx backup files of your setup.
-
-# Open example_setup.lgp in Control Center and export it to a text file via 'File->Export to...->Text...'.
-
-# Run: *afx2lg*.  You will be prompted for the location of a .syx file (step 1) and the location of the exported setup file (step 2).  Additionally you'll need to provide a name for the output file.
+  # Run: *axebackup*.  This will create .syx backup files of your setup.
+  # Open example_setup.lgp in Control Center and export it to a text file via 'File->Export to...->Text...'.
+  # Run: *afx2lg*.  You will be prompted for the location of a .syx file (step 1) and the location of the exported setup file (step 2).  Additionally you'll need to provide a name for the output file.
     The output will look something like this:
-    <pre>
-    I need a path to a LittleGiant exported text file: <b>mysetup.txt</b><br>
-    I need a path to a preset file or bank (.syx): <b>BankA.syx</b><br>
-    Enter a preset range or * for all: <b>*</b><br>
-    Enter an output file name: <b>my_new_setup.txt/<b><br>
-    </pre>
-# Open up Control Center again and import the output file (my_new_setup.txt) via 'File->Import from...->Text...'.
-# Voila, you have your new setup file with proper preset names from the AxeFx that you can send to your LG.
+      <pre>I need a path to a LittleGiant exported text file: mysetup.txt</pre>
+      <pre>I need a path to a preset file or bank (.syx): BankA.syx</pre>
+      <pre>Enter a preset range or * for all: *</pre>
+      <pre>Enter an output file name: my_new_setup.txt</pre>
+  # Open up Control Center again and import the output file (my_new_setup.txt) via 'File->Import from...->Text...'.
+  # Voila, you have your new setup file with proper preset names from the AxeFx that you can send to your LG.
 
 If you encounter problems, please file bugs [http://code.google.com/p/afx2lg/issues/list here].
