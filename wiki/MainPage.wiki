@@ -30,11 +30,11 @@ If you set axeloader up as the default handler for .syx files, it will send the 
 
 ==afx2lg==
 
-    This is a simple utility to update and generate setup files for the Little Giant from [http://gordius.be Gordius].  You can run the utility without any arguments and it will prompt you for input.  If you do prefer to use arguments run "afx2lg -?" for details.
+This is a simple utility to update and generate setup files for the Little Giant from [http://gordius.be Gordius].  You can run the utility without any arguments and it will prompt you for input.  If you do prefer to use arguments run "afx2lg -?" for details.
 
 ===example_setup.lgp===
 
-    This is an example setup file (actually it's what I use in conjunction with *afx2lg*) made with Control Center (the configuration app for the Little Giant).  Open this file up in Control Center, take a look at the patches, banks etc just to understand what this file contains.
+This is an example setup file (actually it's what I use in conjunction with *afx2lg*) made with Control Center (the configuration app for the Little Giant).  Open this file up in Control Center, take a look at the patches, banks etc just to understand what this file contains.
 
 There are a few useful things in there such as programming for scenes, the looper and support for tap tempo + tuner on the same switch. The actual patches though, are just placeholders.  This is what afx2lg will read and use to generate new banks.
 
@@ -42,7 +42,7 @@ This is just an example, so feel free to use your own setup file.  Also, a gener
 
 In short this is how afx2lg works:
 
-    _<axe fx presets> + <LG setup> + afx2lg = <new LG setup>_
+    _<axe fx presets> + <LG setup> + *afx2lg* = <new LG setup>_
 
 So to use, do the following:
 
@@ -51,16 +51,14 @@ So to use, do the following:
 # Open example_setup.lgp in Control Center and export it to a text file via 'File->Export to...->Text...'.
 
 # Run: *afx2lg*.  You will be prompted for the location of a .syx file (step 1) and the location of the exported setup file (step 2).  Additionally you'll need to provide a name for the output file.
-
-The output will look something like this:
-<pre>
-        I need a path to a LittleGiant exported text file: *mysetup.txt*
-        I need a path to a preset file or bank (.syx): *BankA.syx*
-        Enter a preset range or `*` for all: *`*`*
-        Enter an output file name: *my_new_setup.txt*
-</pre>
+    The output will look something like this:
+    <pre>
+    I need a path to a LittleGiant exported text file: <b>mysetup.txt</b><br>
+    I need a path to a preset file or bank (.syx): <b>BankA.syx</b><br>
+    Enter a preset range or * for all: <b>*</b><br>
+    Enter an output file name: <b>my_new_setup.txt/<b><br>
+    </pre>
 # Open up Control Center again and import the output file (my_new_setup.txt) via 'File->Import from...->Text...'.
-
 # Voila, you have your new setup file with proper preset names from the AxeFx that you can send to your LG.
 
 If you encounter problems, please file bugs [http://code.google.com/p/afx2lg/issues/list here].
