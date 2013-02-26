@@ -24,7 +24,7 @@ If you're interested in the actual data, you can additionally run axebackup with
 
 ==axeloader==
 
-    *axeloader* is a tool to send presets, backups or IR files to the AxeFx II.  When applied to a single preset file, the utility will send the preset to the current edit buffer, overriding the embedded preset id, so that no presets are ever overwritten and that the preset doesn't go to some unexpected location on the AxeFx.  This is so that you, the user, can pick a place where you want to store the preset or if you just want to try it out without saving.  I.e. it's great for previewing and adding AxeExchange presets to your AxeFx.
+*axeloader* is a tool to send presets, backups or IR files to the AxeFx II.  When applied to a single preset file, the utility will send the preset to the current edit buffer, overriding the embedded preset id, so that no presets are ever overwritten and that the preset doesn't go to some unexpected location on the AxeFx.  This is so that you, the user, can pick a place where you want to store the preset or if you just want to try it out without saving.  I.e. it's great for previewing and adding AxeExchange presets to your AxeFx.
 
 If you set axeloader up as the default handler for .syx files, it will send the data directly to the AxeFx when you double click the .syx file.  Alternatively, you can drag and drop .syx files onto axeloader to send it to the AxeFx.
 
